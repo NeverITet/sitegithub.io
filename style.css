@@ -1,0 +1,374 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto';
+}
+
+
+header {
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+span {
+    font-weight: 300;
+}
+
+i {
+    text-decoration: underline;
+}
+
+p {
+    margin: 0.2rem 0;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+input {
+    margin: 1rem 0;
+}
+
+fieldset {
+    width: 400px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 60px;
+
+    background-color: gray;
+}
+
+main {
+    position: relative;
+}
+
+/* header */
+nav:first-child {
+    font-weight: bold;
+    color: black;
+}
+
+nav::after {
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: gray;
+    position: absolute;
+    width: 0;
+    transition: 0.1s linear;
+}
+
+nav:hover::after {
+    
+    width: 100%;
+}
+
+nav:first-child:hover::after {
+    background: black;
+    width: 100%;
+}
+
+nav {
+    font-weight: 400;
+    color: gray;
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+.container {
+    margin: 2rem 20vh;
+    
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* intro */
+
+.intro {
+    background-color: gray;
+
+    
+}
+
+.intro__inner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding: 4rem;
+}
+
+
+.intro__title {
+    margin: 2rem;
+
+    text-align: center;
+    font-size: 2rem;
+}
+
+.intro__text {
+    margin: 2rem;
+
+    font-weight: 500;
+    font-size: 1.3em;
+
+    text-align: center;
+}
+
+.intro__button {
+    margin-top: 1.5rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 25px;
+
+    text-transform: uppercase;
+    font-size: 1.1em;
+    cursor: pointer;
+    border: none;
+
+    transition: 0.1s linear;
+
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.821);
+}
+
+/* main */
+
+/* sevices */
+
+.services {
+    margin-bottom: 2rem;
+}
+
+.services__title {
+    text-align: center;
+}
+
+.services__law {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    place-content: center;
+    gap: 30px;
+}
+
+.services__item {
+    display: grid;
+    place-items: center;
+    width: 250px;
+    height: 200px;
+    background-color: gray;
+    cursor: pointer;
+
+    transition: 0.2s linear;
+}
+
+.services__item:hover {
+    background-color: black;
+    color: white;
+}
+
+.services__text {
+    font-size: 1.3em;
+}
+
+/* defend */
+
+.defend__inner {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    place-content: center;
+}
+
+.defend__title {
+    text-align: center;
+}
+
+.defend__steps {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: auto;
+    gap: 30px;
+}
+
+.defend__item {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+
+    width: 250px;
+}
+
+.defend__photo {
+    margin-bottom: 0.9rem;
+
+    width: 250px;
+    height: 200px;
+
+    background-color: gray;
+}
+
+.defend__text {
+    text-align: center;
+}
+
+/* about */
+
+.about__inner {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    place-items: center;
+}
+
+.about__purpose {
+    display: grid;
+    grid-template-columns: repeat(3, 0.33fr);
+    row-gap: 100px;
+    column-gap: 250px;
+}
+
+.about__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.about__photo {
+    margin-bottom: 1rem;
+
+    width: 125px;
+    height: 125px;
+    background-color: gray;
+    border-radius: 100%;
+}
+
+.about__text {
+    height: 100px;
+    text-align: center;
+}
+
+/* lawyer */
+
+.lawyer__inner {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    place-items: center;
+}
+
+.lawyer__persons {
+    display: grid;
+    grid-template-columns: repeat(4, 0.25fr);
+    grid-template-rows: auto;
+    gap: 30px;
+}
+
+.lawyer__item {
+    width: 250px;
+}
+
+.lawyer__photo {
+    margin-bottom: 2rem;
+
+    width: 250px;
+    height: 200px;
+
+    background-color: gray;
+    
+}
+
+/* form */
+
+.form__inner {
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.form__item {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.form__right {
+    display: flex;
+    align-items: end;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__policy {
+    cursor: pointer;
+}
+
+.footer__policy:hover {
+    text-decoration: underline;
+}
+
+.footer__text {
+    margin-left: 2rem;
+}
+
+.banner {
+    width: 265px;
+    height: 575px;
+
+    position: absolute;
+    left: 4%;
+    
+    border-radius: 50px;
+    color: white;
+
+    background-color: gray;
+}
+
+.banner__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    height: 575px;
+}
+
+.banner__title {
+    text-transform: uppercase;
+    font-size: 2em;
+    
+}
+
+.banner__text {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+
